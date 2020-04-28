@@ -5,11 +5,11 @@
 - Blog: **`www.keremceliker.com`**
 
 This is a Terraform module which provides AWS EC2 (without EKS) and S3,Route53,VPC for publishing services via NGINX Ingress on Kubernetes Kops.
-![aws-diagram.png](images/logo.JPG)
+![aws-diagram](images/logo.JPG)
 
 **It provides the following example Kubernetes Infra-Stack**
 
-![aws-diagram.png](images/12.JPG)
+![aws-diagram](images/12.JPG)
 
 HTTPS requests are transfered to a pod via the external VPC and the node port of NGINX (e.g. tcp/31504).
  
@@ -61,23 +61,23 @@ HTTPS requests are transfered to a pod via the external VPC and the node port of
   ****************************
   **- Amazon AWS Cloud `EC2` preparation**
   
-  ![aws-diagram.png](images/3.JPG)
+  ![aws-diagram](images/3.JPG)
  
   **- Amazon AWS Cloud `Route53` preperation**
  
-  ![aws-diagram.png](images/8.JPG)
+  ![aws-diagram](images/8.JPG)
   
  **- Amazon AWS Cloud `S3` preperation**
   
-  ![aws-diagram.png](images/9.JPG)
+  ![aws-diagram](images/9.JPG)
   
   **- Amazon AWS Cloud `VPC` preparation**
   
-  ![aws-diagram.png](images/7.JPG)
+  ![aws-diagram](images/7.JPG)
   
   **- Amazon AWS Cloud `EBS` preparation**
   
-  ![aws-diagram.png](images/5.JPG)
+  ![aws-diagram](images/5.JPG)
   
   **- Amazon AWS Cloud `Elastic IPs` preparation**
   **- Amazon AWS Cloud `EC2 Auto Scaling` preparation**
@@ -119,7 +119,7 @@ Download AWS CLI, execute the command line or PowerShell command below:
 
 ## Correct K8s Code Approach by Terraform
 
-![aws-diagram.png](images/1.JPG)
+![aws-diagram](images/1.JPG)
 
 **Kops_s3.tf**
 ```
@@ -248,7 +248,7 @@ Once you have a Kubernetes cluster / infrastructure up and running, ssh on to th
 3. `kubectl apply -f hello-k8s-deploy.yaml`
 4. `kubectl get svc`. Wait a couple second or minutes until all Pods and Replicas are reported as deployed.
 
-![aws-diagram.png](images/10.JPG)
+![aws-diagram](images/10.JPG)
 
 **You must be see as the follows information**
 ```
@@ -331,7 +331,7 @@ Starting to serve on 127.0.0.1:8001
 ```
 **Access the Kubernetes Web Administrator Dashboard with external URL or IP address as follows**
 
-![aws-diagram.png](images/11.JPG)
+![aws-diagram](images/11.JPG)
 
 
 
