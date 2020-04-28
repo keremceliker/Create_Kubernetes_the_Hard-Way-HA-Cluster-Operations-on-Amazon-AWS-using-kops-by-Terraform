@@ -104,12 +104,12 @@ Download AWS CLI, execute the command line or PowerShell command below:
 ```
 cat kops_s3.tf
  
-resource "aws_s3_bucket" "kops-state" {
-    bucket = "kops-state-ka2b6219"
+resource "aws_s3_bucket" "kops-kerem-S3" {
+    bucket = "kops-kops-kerem-S3"
     acl = "private"
  
     tags {
-        Name = "Kops AWS state"
+        Name = "Kops kops-kerem-S3"
     }
 }
 ```
