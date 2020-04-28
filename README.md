@@ -4,6 +4,8 @@
 - Linkedin: **`linkedin.com/in/keremceliker`**
 - Blog: **`www.keremceliker.com`**
 
+Tanzu by VMware, Kubernetes and Docker,OpenShift Container Infrastructures will make a definite change to come into our lives as Cloud or Hybrid-Cloud. This time, I prepared a different Container Mini DevOps Project. It can be easily used to start in an infrastructure project as an example.
+
 This is a Terraform module which provides AWS EC2 (without EKS) and S3,Route53,VPC for publishing services via NGINX Ingress on Kubernetes Kops.
 ![aws-diagram](images/logo.JPG)
 
