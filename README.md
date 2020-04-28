@@ -100,7 +100,7 @@ Download AWS CLI, execute the command line or PowerShell command below:
 ## Correct K8s Code Approach by Terraform
 
 *Kops_s3.tf*
-
+```
 cat kops_s3.tf
  
 resource "aws_s3_bucket" "kops-state" {
@@ -111,18 +111,20 @@ resource "aws_s3_bucket" "kops-state" {
         Name = "Kops AWS state"
     }
 }
+```
 
 *Provider.tf*
-
+```
 provider "aws" {
   
     profile = "default"
     region = "eu-west-2"  
 }
+```
 
 *Variables.tf*
 
-
+```
 variable "region" {
   default = "eu-west-2"
   
@@ -145,6 +147,7 @@ variable "SET_TO_PRIVATE_KEY" {
 variable "SET_TO_PUBLIC_KEY" {
   default = "InputYourKey.pub"
 }
+```
 
 -In order to determine the closest your data center follows page can be used
 *http://www.cloudping.info/*
@@ -154,7 +157,7 @@ variable "SET_TO_PUBLIC_KEY" {
 
 
 *Kubernetes.tf"
-
+```
 -The IDs you need to prepare for Kubernetes in terraform below. Accordingly, you just need to build your own structure with Resource and Output routings in Terraform"
 
 locals = {
@@ -174,6 +177,8 @@ locals = {
   vpc_cidr_block               = "${aws_vpc.kops-keremceliker-com.cidr_block}"
   vpc_id                       = "${aws_vpc.kops-keremceliker-com.id}"
 }
+
+```
 
 ## Create cluster Kubernetes Kops (Don't forget feed the $VPC variable)
 ```
