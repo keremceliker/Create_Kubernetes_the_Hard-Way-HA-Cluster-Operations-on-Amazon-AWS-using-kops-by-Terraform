@@ -230,19 +230,19 @@ NAME                            TYPE           CLUSTER-IP          EXTERNAL-IP  
 NGINX Public Web-Site         LoadBalancer     100.64.0.1         kops.keremceliker.com         80:31958/TCP   2m26s
 kubernetes                    ClusterIP        100.65.103.179         <none>                    443/TCP        59m
 ```
-**kubectl get nodes**
+**Kerem@TanzuPrivateRelease$ kubectl get nodes**
 ```
 NAME                                         STATUS   ROLES    AGE   VERSION
 ip-172-20-43-42.eu-west-2.compute.internal   Ready    node     18h   v1.18
 ip-172-20-46-91.eu-west-2.compute.internal   Ready    node     18h   v1.18
 ip-172-20-53-78.eu-west-2.compute.internal   Ready    master   18h   v1.18
 ```
-**kubectl cluster-info**
+**Kerem@TanzuPrivateRelease$ kubectl cluster-info**
 ```
 Kubernetes master is running at https://api.kops.keremceliker.com
 KubeDNS is running at https://api.kops.keremceliker.com/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
 ```
-**kubectl get all --all-namespaces**
+**Kerem@TanzuPrivateRelease$ kubectl get all --all-namespaces**
 ```
 NAMESPACE              NAME                                                                     READY   STATUS    RESTARTS   AGE
 default                pod/my-nginx-deployment-7ddd8b97f8-225gr                                 1/1     Running   0          74m
@@ -293,11 +293,11 @@ kubernetes-dashboard   replicaset.apps/kubernetes-dashboard-56484d4c5        1  
 
 **Depending if you are using a config file, via command-line run**
 ```
-kubectl proxy
+Kerem@TanzuPrivateRelease$ kubectl proxy
 ```
 or
 ```
-kubectl --kubeconfig=kubeconfig proxy
+Kerem@TanzuPrivateRelease$ kubectl --kubeconfig=kubeconfig proxy
 ```
 You should get a similar response
 
@@ -306,8 +306,7 @@ Starting to serve on 127.0.0.1:8001
 **Access the Kubernetes Web Administrator Dashboard with external URL or IP address as follows**
 
 
-
-
+Kerem@TanzuPrivateRelease$ 
 
 
 
