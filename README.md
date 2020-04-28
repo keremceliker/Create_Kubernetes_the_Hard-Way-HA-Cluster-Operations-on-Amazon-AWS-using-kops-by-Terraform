@@ -100,7 +100,7 @@ Download AWS CLI, execute the command line or PowerShell command below:
 
 ## Correct K8s Code Approach by Terraform
 
-*Kops_s3.tf*
+- *Kops_s3.tf*
 ```
 cat kops_s3.tf
  
@@ -114,7 +114,7 @@ resource "aws_s3_bucket" "kops-kerem-S3" {
 }
 ```
 
-*Provider.tf*
+- *Provider.tf*
 ```
 provider "aws" {
   
@@ -123,7 +123,7 @@ provider "aws" {
 }
 ```
 
-*Variables.tf*
+- *Variables.tf*
 
 ```
 variable "region" {
@@ -157,7 +157,7 @@ variable "SET_TO_PUBLIC_KEY" {
 *https://cloud-images.ubuntu.com/locator/ec2/*
 
 
-*Kubernetes.tf"
+- *Kubernetes.tf"
 ```
 -The IDs you need to prepare for Kubernetes in terraform below. Accordingly, you just need to build your own structure with Resource and Output routings in Terraform"
 
