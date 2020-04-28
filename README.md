@@ -37,7 +37,7 @@ HTTPS requests are transfered to a pod via the external VPC and the node port of
 - Security group for the masters of the cluster `kops_cluster_name`
 - Security group for the nodes of the cluster `kops_cluster_name`
 
-
+5
 ### 1) Local infrastructure:
 
 1.1) *Assumptions:*
@@ -56,10 +56,15 @@ HTTPS requests are transfered to a pod via the external VPC and the node port of
   - Install latest version of Kubernetes [Kops - Kubernetes CLI](https://github.com/kubernetes/kops/releases)
   ****************************
   - Amazon AWS Cloud `EC2` preparation
+  ![aws-diagram.png](images/3.JPG)
   - Amazon AWS Cloud `Route53` preperation
+  ![aws-diagram.png](images/8.JPG)
   - Amazon AWS Cloud `S3` preperation
+  ![aws-diagram.png](images/9.JPG)
   - Amazon AWS Cloud `VPC` preparation
+  ![aws-diagram.png](images/7.JPG)
   - Amazon AWS Cloud `EBS` preparation
+  ![aws-diagram.png](images/5.JPG)
   - Amazon AWS Cloud `Elastic IPs` preparation
   - Amazon AWS Cloud `EC2 Auto Scaling` preparation
   - Amazon AWS Cloud `IAM` preparation
@@ -99,6 +104,8 @@ Download AWS CLI, execute the command line or PowerShell command below:
 
 
 ## Correct K8s Code Approach by Terraform
+
+![aws-diagram.png](images/1.JPG)
 
 **Kops_s3.tf**
 ```
@@ -181,6 +188,7 @@ locals = {
 
 ```
 
+
 ## Create cluster Kubernetes Kops (Don't forget feed the $VPC variable)
 ```
 *Example*
@@ -209,7 +217,9 @@ Kerem@Container:~terraform$ terraform init
 Kerem@Container:~terraform$ terraform plan (Or use Validate)
 Kerem@Container:~terraform$ terraform apply
 ```
-- When your POC or Project work is complete, you can remove the entire environment with the following command with the following awesome command ;-)
+![aws-diagram.png](images/2.JPG)
+
+**When your POC or Project work is complete, you can remove the entire environment with the following command with the following awesome command ;-)**
 ```
 Kerem@Container:~terraform$ terraform destroy
 ```
@@ -223,6 +233,8 @@ Once you have a Kubernetes cluster / infrastructure up and running, ssh on to th
 2. `Create a Yaml Script for Serverless Web-Site and make upload to Terraform Stack Source`
 3. `kubectl apply -f hello-k8s-deploy.yaml`
 4. `kubectl get svc`. Wait a couple second or minutes until all Pods and Replicas are reported as deployed.
+
+![aws-diagram.png](images/10.JPG)
 
 **You must be see as the follows information**
 ```
@@ -305,8 +317,8 @@ Starting to serve on 127.0.0.1:8001
 
 **Access the Kubernetes Web Administrator Dashboard with external URL or IP address as follows**
 
+![aws-diagram.png](images/11.JPG)
 
-Kerem@TanzuPrivateRelease$ 
 
 
 
