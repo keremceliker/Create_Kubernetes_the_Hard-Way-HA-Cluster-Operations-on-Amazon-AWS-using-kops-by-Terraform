@@ -1,13 +1,11 @@
 # Create Kubernetes The Hard-Way HA Cluster Operations on Amazon AWS using kops by Terraform Code (*HashiCorp)
 
 This is a Terraform module which provides AWS EC2 (without EKS) and S3,Route53,VPC for publishing services via NGINX Ingress on Kubernetes Kops.
-
-<img src="https://github.com/kubernetes/kubernetes/raw/master/logo/logo.png" width="100">
-
+![aws-diagram.png](images/logo.JPG)
 
 It provides the following stack:
 
-![aws-diagram.png](images/logo.JPG)
+![aws-diagram.png](images/12.JPG)
 
 HTTPS requests are transfered to a pod via the external VPC and the node port of NGINX (e.g. tcp/31504).
 
