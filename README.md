@@ -3,7 +3,7 @@
 This is a Terraform module which provides AWS EC2 (without EKS) and S3,Route53,VPC for publishing services via NGINX Ingress on Kubernetes Kops.
 ![aws-diagram.png](images/logo.JPG)
 
-- It provides the following stack:
+**It provides the following stack**
 
 ![aws-diagram.png](images/12.JPG)
 
@@ -100,7 +100,7 @@ Download AWS CLI, execute the command line or PowerShell command below:
 
 ## Correct K8s Code Approach by Terraform
 
-- *Kops_s3.tf*
+**Kops_s3.tf**
 ```
 cat kops_s3.tf
  
@@ -114,7 +114,7 @@ resource "aws_s3_bucket" "kops-kerem-S3" {
 }
 ```
 
-- *Provider.tf*
+**Provider.tf**
 ```
 provider "aws" {
   
@@ -123,7 +123,7 @@ provider "aws" {
 }
 ```
 
-- *Variables.tf*
+**Variables.tf**
 
 ```
 variable "region" {
@@ -150,14 +150,14 @@ variable "SET_TO_PUBLIC_KEY" {
 }
 ```
 
--In order to determine the closest your data center follows page can be used
+**In order to determine the closest your data center follows page can be used**
 *http://www.cloudping.info/*
 
--The easiest way to find EC2 AMI ID for Ubuntu Linux is by following the following site.
+**The easiest way to find EC2 AMI ID for Ubuntu Linux is by following the following site**
 *https://cloud-images.ubuntu.com/locator/ec2/*
 
 
-- *Kubernetes.tf"
+**Kubernetes.tf**
 ```
 -The IDs you need to prepare for Kubernetes in terraform below. Accordingly, you just need to build your own structure with Resource and Output routings in Terraform"
 
@@ -224,25 +224,25 @@ Once you have a Kubernetes cluster / infrastructure up and running, ssh on to th
 3. `kubectl apply -f hello-k8s-deploy.yaml`
 4. `kubectl get svc`. Wait a couple second or minutes until all Pods and Replicas are reported as deployed.
 
-*You must be see as the follows information*
+**You must be see as the follows information**
 ```
 NAME                            TYPE           CLUSTER-IP          EXTERNAL-IP                   PORT(S)        AGE
 NGINX Public Web-Site         LoadBalancer     100.64.0.1         kops.keremceliker.com         80:31958/TCP   2m26s
 kubernetes                    ClusterIP        100.65.103.179         <none>                    443/TCP        59m
 ```
-*kubectl get nodes*
+**kubectl get nodes**
 ```
 NAME                                         STATUS   ROLES    AGE   VERSION
 ip-172-20-43-42.eu-west-2.compute.internal   Ready    node     18h   v1.18
 ip-172-20-46-91.eu-west-2.compute.internal   Ready    node     18h   v1.18
 ip-172-20-53-78.eu-west-2.compute.internal   Ready    master   18h   v1.18
 ```
-*kubectl cluster-info*
+**kubectl cluster-info**
 ```
 Kubernetes master is running at https://api.kops.keremceliker.com
 KubeDNS is running at https://api.kops.keremceliker.com/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
 ```
-*kubectl get all --all-namespaces*
+**kubectl get all --all-namespaces**
 ```
 NAMESPACE              NAME                                                                     READY   STATUS    RESTARTS   AGE
 default                pod/my-nginx-deployment-7ddd8b97f8-225gr                                 1/1     Running   0          74m
@@ -291,7 +291,7 @@ kubernetes-dashboard   replicaset.apps/kubernetes-dashboard-56484d4c5        1  
 
 ## If you want to easily manage your Kubernetes Infrastructure as a VMware Tanzu via vSphere GUI Interface, you can install and use the Kubernetes Dashboard as follows.
 
-*Depending if you are using a config file, via command-line run*
+**Depending if you are using a config file, via command-line run**
 ```
 kubectl proxy
 ```
@@ -303,7 +303,7 @@ You should get a similar response
 
 Starting to serve on 127.0.0.1:8001
 
-*Access the Kubernetes Web Administrator Dashboard with external URL or IP address as follows*
+**Access the Kubernetes Web Administrator Dashboard with external URL or IP address as follows**
 
 
 
