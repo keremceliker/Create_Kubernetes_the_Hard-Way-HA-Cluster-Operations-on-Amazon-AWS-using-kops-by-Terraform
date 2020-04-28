@@ -59,25 +59,25 @@ HTTPS requests are transfered to a pod via the external VPC and the node port of
   
   ![aws-diagram.png](images/3.JPG)
  
-  - Amazon AWS Cloud `Route53` preperation
+  **- Amazon AWS Cloud `Route53` preperation**
  
   ![aws-diagram.png](images/8.JPG)
   
-  - Amazon AWS Cloud `S3` preperation
+ **- Amazon AWS Cloud `S3` preperation**
   
   ![aws-diagram.png](images/9.JPG)
   
-  - Amazon AWS Cloud `VPC` preparation
+  **- Amazon AWS Cloud `VPC` preparation**
   
   ![aws-diagram.png](images/7.JPG)
   
-  - Amazon AWS Cloud `EBS` preparation
+  **- Amazon AWS Cloud `EBS` preparation**
   
   ![aws-diagram.png](images/5.JPG)
   
-  - Amazon AWS Cloud `Elastic IPs` preparation
-  - Amazon AWS Cloud `EC2 Auto Scaling` preparation
-  - Amazon AWS Cloud `IAM` preparation
+  **- Amazon AWS Cloud `Elastic IPs` preparation**
+  **- Amazon AWS Cloud `EC2 Auto Scaling` preparation**
+  **- Amazon AWS Cloud `IAM` preparation**
   
 ### Same steps on Docker Container can also be done if you wish :-)
 
