@@ -7,7 +7,7 @@
 This is a Terraform module which provides AWS EC2 (without EKS) and S3,Route53,VPC for publishing services via NGINX Ingress on Kubernetes Kops.
 ![aws-diagram.png](images/logo.JPG)
 
-**It provides the following stack**
+**It provides the following example Kubernetes Infra-Stack**
 
 ![aws-diagram.png](images/12.JPG)
 
