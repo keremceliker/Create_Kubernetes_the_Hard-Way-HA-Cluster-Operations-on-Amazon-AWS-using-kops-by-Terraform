@@ -339,11 +339,3 @@ Starting to serve on 127.0.0.1:8001
 ***How cool and exciting it, isn't it :-) 
 ------
 ***Automatization with Tanzu/Pivotal or OpenShift, Kubernetes and DevOps in Containers processes makes your life really absolutely easier and looking cool !
-
-
-
-
-
-
-
-
