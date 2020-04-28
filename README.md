@@ -1,7 +1,7 @@
 # Create Kubernetes The Hard-Way HA Cluster Operations on Amazon AWS using kops by Terraform Code (*HashiCorp)
 *Written by Kerem ÇELİKER*
 - Twitter: **`@CloudRss`**
-- Linkedin: **`[linkedin.com/in/keremceliker](https://linkedin.com/in/keremceliker)`**
+- Linkedin: **`linkedin.com/in/keremceliker`**
 
 This is a Terraform module which provides AWS EC2 (without EKS) and S3,Route53,VPC for publishing services via NGINX Ingress on Kubernetes Kops.
 ![aws-diagram.png](images/logo.JPG)
