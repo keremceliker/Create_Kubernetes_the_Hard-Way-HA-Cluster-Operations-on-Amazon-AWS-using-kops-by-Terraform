@@ -7,7 +7,7 @@ This is a Terraform module which provides AWS EC2 (without EKS) and S3,Route53,V
 
 It provides the following stack:
 
-![aws-diagram.png](images/aws-diagram.png)
+![aws-diagram.png](images/logo.JPG)
 
 HTTPS requests are transfered to a pod via the external VPC and the node port of NGINX (e.g. tcp/31504).
 
