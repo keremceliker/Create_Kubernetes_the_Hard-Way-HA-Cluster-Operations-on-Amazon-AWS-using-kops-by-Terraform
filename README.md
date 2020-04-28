@@ -10,8 +10,9 @@ This is a Terraform module which provides AWS EC2 (without EKS) and S3,Route53,V
 
 HTTPS requests are transfered to a pod via the external VPC and the node port of NGINX (e.g. tcp/31504).
 
--*Twitter: **`@CloudRss`**
--*Linkedin: **`linkedin.com/in/keremceliker`**
+- *Twitter: **`@CloudRss`**
+- *Linkedin: **`linkedin.com/in/keremceliker`**
+ 
  
 
 ## Pre-Requisites
