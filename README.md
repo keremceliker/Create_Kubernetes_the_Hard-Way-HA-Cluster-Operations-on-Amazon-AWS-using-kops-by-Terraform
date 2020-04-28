@@ -326,9 +326,9 @@ or
 Kerem@TanzuPrivateRelease$ kubectl --kubeconfig=kubeconfig proxy
 ```
 You should get a similar response
-
+```
 Starting to serve on 127.0.0.1:8001
-
+```
 **Access the Kubernetes Web Administrator Dashboard with external URL or IP address as follows**
 
 ![aws-diagram.png](images/11.JPG)
