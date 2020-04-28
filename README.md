@@ -37,7 +37,7 @@ HTTPS requests are transfered to a pod via the external VPC and the node port of
 - Security group for the masters of the cluster `kops_cluster_name`
 - Security group for the nodes of the cluster `kops_cluster_name`
 
-5
+
 ### 1) Local infrastructure:
 
 1.1) *Assumptions:*
