@@ -13,10 +13,6 @@ HTTPS requests are transfered to a pod via the external VPC and the node port of
 *Twitter: `@CloudRss`*
 *Linkedin: `linkedin.com/in/keremceliker`*
 
- [[params.social]]
-    icon = "twitter"
-    icon_pack = "fa"
-    link = "https://twitter.com/cloudrss"
 
 ## Pre-Requisites
 
