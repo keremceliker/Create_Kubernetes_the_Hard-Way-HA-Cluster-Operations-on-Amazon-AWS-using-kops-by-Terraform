@@ -55,7 +55,7 @@ HTTPS requests are transfered to a pod via the external VPC and the node port of
   - Install latest version of Kubernetes [KubeCtl - Kubernetes CLI](https://docs.aws.amazon.com/eks/latest/userguide/install-kubectl.html)
   - Install latest version of Kubernetes [Kops - Kubernetes CLI](https://github.com/kubernetes/kops/releases)
   ****************************
-  - Amazon AWS Cloud `EC2` preparation
+  **- Amazon AWS Cloud `EC2` preparation**
   
   ![aws-diagram.png](images/3.JPG)
  
