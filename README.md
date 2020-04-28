@@ -1,4 +1,3 @@
-[![GoDoc Widget]][GoDoc] [![twitter](https://bestpractices.coreinfrastructure.org/projects/569/badge)](https://twitter.com/cloudrss)
 # Create Kubernetes The Hard-Way HA Cluster Operations on Amazon AWS using kops by Terraform Code (*HashiCorp)
 *Written by Kerem ÇELİKER*
  
@@ -11,6 +10,8 @@ This is a Terraform module which provides AWS EC2 (without EKS) and S3,Route53,V
 
 HTTPS requests are transfered to a pod via the external VPC and the node port of NGINX (e.g. tcp/31504).
 
+*Twitter: `@CloudRss`*
+*Linkedin: `linkedin.com/in/keremceliker`*
 
  [[params.social]]
     icon = "twitter"
