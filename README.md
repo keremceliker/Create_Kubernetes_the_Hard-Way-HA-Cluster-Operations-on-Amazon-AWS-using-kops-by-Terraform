@@ -1,4 +1,4 @@
-[![GoDoc Widget]][GoDoc] [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/569/badge)](https://twitter.com/cloudrss)
+[![GoDoc Widget]][GoDoc] [![twitter](https://bestpractices.coreinfrastructure.org/projects/569/badge)](https://twitter.com/cloudrss)
 # Create Kubernetes The Hard-Way HA Cluster Operations on Amazon AWS using kops by Terraform Code (*HashiCorp)
 *Written by Kerem ÇELİKER*
  
